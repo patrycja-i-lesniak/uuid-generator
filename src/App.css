@@ -51,6 +51,16 @@ button {
     background: #c44569;
 }
 
+p button {
+    background: none;
+    display: inline;
+    color: #f8a5c2;
+    font-size: 23px;
+    padding: 0;
+    border-bottom: 1px solid #f8a5c2;
+    border-radius: unset;
+}
+
 .result-refresh {
     color: #f8a5c2;
     font-size: 23px
