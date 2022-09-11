@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/uuid-generator/static/css/main.1938e104.css",
+    "main.js": "/uuid-generator/static/js/main.009cf1de.js",
+    "static/js/787.075e65b6.chunk.js": "/uuid-generator/static/js/787.075e65b6.chunk.js",
+    "index.html": "/uuid-generator/index.html",
+    "main.1938e104.css.map": "/uuid-generator/static/css/main.1938e104.css.map",
+    "main.009cf1de.js.map": "/uuid-generator/static/js/main.009cf1de.js.map",
+    "787.075e65b6.chunk.js.map": "/uuid-generator/static/js/787.075e65b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1938e104.css",
+    "static/js/main.009cf1de.js"
+  ]
+}
