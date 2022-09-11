@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
-export default function UuidList({itemOnList}) {
-
+export default function UuidList({ itemOnList }) {
   return (
     <div>
       {itemOnList && (

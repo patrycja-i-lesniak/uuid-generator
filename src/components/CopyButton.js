@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { AiOutlineCopy } from "react-icons/ai";
 
-export default function CopyButton({uuid}) {
+export default function CopyButton({ uuid }) {
   return (
     <div>
       <CopyToClipboard text={uuid} onCopy={() => [alert("Copied uuid", { uuid })]}>
