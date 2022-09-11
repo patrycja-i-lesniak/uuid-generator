@@ -1,6 +1,37 @@
-# Getting Started with Create React App
+# UUIDv4 Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Author: **Patrycja Leśniak**
+* September, 2022.
+
+A simple application for generating UUID version 4 created as part of state transfer learning in React..
+
+## DEMO - [CLICK ->  uuidv4 Generator](https://patrycja-i-lesniak.github.io/uuidGenerator/)
+
+![UUIDv4 Generator Image](src/assets/uuid-generator.png)
+
+## Libraries
+
+The application uses react-uuid and react-copy-to-clipboard libraries.
+
+## How to generate a code?
+
+1. Click in the top section or on the button on the tab to generate a single UUIDv4 code.
+2. Enter the number of codes to be generated in the form and click the Generate button. The code list will be displayed below.
+
+##  Project is created with
+
+* Semantic HTML
+* CSS
+* Grid
+* Flex
+* Media queries
+* ES6+
+* React JS
+* Custom hooks
+* react-uuid
+* react-copy-to-clipboard
+
+___
 
 ## Available Scripts
 
