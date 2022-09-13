@@ -1,12 +1,17 @@
 import React from "react";
 
-export default function UuidList({ itemOnList }) {
+
+export default function UuidList({ itemsOnList}) {
   return (
     <div>
-      {itemOnList && (
+      {itemsOnList && (
         <div className="uuid-container">
           <h2>UUID identifiers</h2>
-          <ul>{itemOnList}</ul>
+          <div>
+            <ul>
+              {itemsOnList}
+            </ul>
+          </div>
         </div>
       )}
     </div>

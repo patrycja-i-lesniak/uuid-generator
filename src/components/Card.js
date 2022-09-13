@@ -34,7 +34,7 @@ export default function Card({ uuid, handleUuid, handleSubmit, handleItems }) {
                   <button type="submit">Generate</button>
                 </div>
               </div>
-              {/* {itemOnList && (
+              {/* {itemsOnList && (
                   <a href="uuidList.txt" download>
                     Download to a file
                   </a>
