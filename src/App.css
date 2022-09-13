@@ -62,6 +62,14 @@ a:hover {
     max-height: 38px;
 }
 
+.top-container-click  {
+    color: #f8a5c2;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
 .top-container-uuid button:hover {
     background-color: #f8a5c2;
     color: #303952;

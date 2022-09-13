@@ -11,15 +11,15 @@ export default function TopGenerator({ uuid, handleUuid }) {
         <CopyButton uuid={uuid} />
       </div>
 
-      <p className="top-container">
-        <a
-          href="/#"
+      <p>
+        <button
+          className="top-container-click"
           onClick={(e) => {
             handleUuid(e);
           }}
         >
           Click
-        </a>{" "}
+        </button>{" "}
         to generate another UUID.
       </p>
     </div>
