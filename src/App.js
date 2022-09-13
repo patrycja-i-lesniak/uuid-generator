@@ -9,7 +9,8 @@ function App() {
   const [items, setItems] = useState(0);
   const [itemOnList, setItemOnList] = useState("");
 
-  function handleUuid() {
+  function handleUuid(e) {
+    e.preventDefault();
     setUuid(uuidv4());
   }
 

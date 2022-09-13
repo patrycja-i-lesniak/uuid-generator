@@ -8,8 +8,8 @@ export default function Card({ uuid, handleUuid, handleSubmit, handleItems }) {
         <div className="card-button-container">
           <button
             className="button"
-            onClick={() => {
-              handleUuid();
+            onClick={(e) => {
+              handleUuid(e);
             }}
           >
             Generate a version 4 UUID

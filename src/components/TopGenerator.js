@@ -14,8 +14,8 @@ export default function TopGenerator({ uuid, handleUuid }) {
       <p className="top-container">
         <a
           href="/#"
-          onClick={() => {
-            handleUuid();
+          onClick={(e) => {
+            handleUuid(e);
           }}
         >
           Click
