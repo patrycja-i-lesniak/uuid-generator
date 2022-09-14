@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 
-
-import { TopGenerator, Footer, Card, UuidList, CopyButton} from "./components";
+import "./App.css";
+import { TopGenerator, Footer, Card, UuidList, CopyButton } from "./components";
 
 function App() {
   const [uuid, setUuid] = useState(uuidv4());
   const [items, setItems] = useState(0);
   const [itemsOnList, setItemsOnList] = useState("");
-  
+
   function handleUuid(e) {
     e.preventDefault();
     setUuid(uuidv4());
@@ -34,14 +33,14 @@ function App() {
   }
 
   const list = GenerateList().map((item, index) => {
-    console.log(item)
     return (
-      <>
-        <li key={index}>{item}</li>
+      <li key={index}>
+        {item}
         <CopyButton uuid={item} />
-      </>
+      </li>
     );
   });
+
   return (
     <div className="App">
       <TopGenerator uuid={uuid} handleUuid={handleUuid} />
