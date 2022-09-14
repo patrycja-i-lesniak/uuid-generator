@@ -4,10 +4,8 @@ export default function Footer() {
   return (
     <nav className="footer">
       <a href="https://github.com/patrycja-i-lesniak">
-        © 2022 Coded by Patrycja Leśniak
-      </a>
-      <a href="https://github.com/patrycja-i-lesniak">
-        <BsGithub className="github" />
+        {" "}
+        © 2022 Coded by Patrycja Leśniak <BsGithub className="github" />
       </a>
     </nav>
   );
