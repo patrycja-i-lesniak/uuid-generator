@@ -1,5 +1,5 @@
 import React from "react";
-import { CopyButton } from "../components";
+import { CopyButton, Button } from "../components";
 
 export default function TopGenerator({ uuid, handleUuid }) {
   return (
@@ -12,14 +12,16 @@ export default function TopGenerator({ uuid, handleUuid }) {
       </div>
 
       <p>
-        <button
-          className="top-container-click"
+        <a
+          href="/"
           onClick={(e) => {
             handleUuid(e);
           }}
+          label="Click"
+          style={{ color: "#f8a5c2" }}
         >
           Click
-        </button>{" "}
+        </a>{" "}
         to generate another UUID.
       </p>
     </div>
