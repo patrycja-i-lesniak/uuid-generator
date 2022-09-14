@@ -48,7 +48,7 @@ a:hover {
     margin: 0 auto 30px;
 }
 
-.top-container-uuid button {
+.copy-button {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -280,7 +280,9 @@ form {
 }
 
 .uuid-container li {
-    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
     letter-spacing: 1.2px;
     line-height: 1.2;
     color: #c44569;
@@ -308,6 +310,74 @@ form {
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+.popup {
+    transform: translateY(-50%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    width: 70vw;
+    max-width: 550px;
+    height: 50vh;
+    min-height: 100px;
+    max-height: 250px;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border: 5px solid #f8a5c2;
+    z-index: 99999;
+    padding: 50px;
+    border-radius: 5px;
+    transition-duration: 2s;
+}
+
+.popup p {
+    color: #303952;
+    font-size: 24px;
+    margin: 10px
+}
+
+.popup .popup-uuid {
+    font-weight: bold;
+    font-size: 26px;
+    padding: 10px 0;
+}
+
+.popup-button {
+    color: #FFF;
+    background: #c44569;
+    padding: 15px 20px;
+    margin: 20px 0 0;
+    border: none;
+    border-radius: 5px;
+    min-width: 150px;
+
+    font-size: 24px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.popup .popup-button:hover {
+    background-color: #303952;
+    color: white;
+    opacity: 90%
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    opacity: 60%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    position: fixed;
 }
 
 /* MEDIA QUERIES  */
