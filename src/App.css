@@ -14,17 +14,32 @@ h2 {
 }
 
 p {
-    font-size: 28px;
+    font-size: 22px;
     color: #f8a5c2;
 }
 
-button:hover, a:hover {
-    opacity: 80%;
+button {
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #FFF;
+    background: #c44569;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    transition: transform 0.3s;
 }
 
-/* a:hover {
-    opacity: 80%;
-} */
+button:hover {
+    transform: scale(1.05)
+}
+
+.button:hover {
+    background-color: #c44569;
+}
 
 /* TOP CONTAINER */
 
@@ -35,31 +50,14 @@ button:hover, a:hover {
     text-align: center;
 }
 
-.top-container p {
-    font-size: 22px;
-}
-
 .top-container-uuid {
     display: grid;
-    grid-template-columns: 700px auto;
+    justify-items: start;
+    grid-template-columns: 630px auto;
     width: 70%;
     align-items: center;
     justify-content: center;
     margin: 0 auto 30px;
-}
-
-.copy-button {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 16px;
-    margin-left: 16px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    color: #FFF;
-    background: #c44569;
-    max-height: 38px;
 }
 
 .top-container-click {
@@ -88,7 +86,6 @@ button:hover, a:hover {
     padding: 20px;
     margin-bottom: 0;
     background-color: #303952;
-
 }
 
 .card-body {
@@ -104,21 +101,6 @@ button:hover, a:hover {
     border-bottom: 1px solid #303952;
 }
 
-.card-button-container button {
-    color: #FFF;
-    background: #c44569;
-    padding: 20px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    margin: 20px 0 40px;
-    cursor: pointer;
-}
-
-/* .card-button-container button:hover {
-    background: #303952;
-} */
-
 .card-body h3 {
     font-size: 32px;
     color: #303952;
@@ -127,10 +109,9 @@ button:hover, a:hover {
 }
 
 .card-body p {
-    color: #000;
+    color: #303952;
     font-size: 20px;
     padding: 0 25px;
-
 }
 
 .card-body li {
@@ -151,16 +132,6 @@ form {
     margin-bottom: 20px
 }
 
-.form-inline a {
-    text-decoration: none;
-    color: #c44569
-}
-
-.form-inline a:visited {
-    color: #596275;
-}
-
-
 
 .whatis {
     padding-top: 20px;
@@ -177,7 +148,7 @@ form {
     height: 50px;
 }
 
-.input-group input {
+input {
     width: 140px;
     text-align: center;
     font-size: 20px;
@@ -189,72 +160,13 @@ form {
     outline: none;
 }
 
-
-.input-group button {
-    width: 140px;
-    outline: none;
-    font-weight: 400;
-    color: #FFF;
-    outline: none;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid #596275;
-    padding: 0px;
-    background-color: #596275;
-}
-
-.generator-container {
-    display: grid;
-    grid-template-columns: 120px 1fr 180px;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    grid-gap: 10px;
-    font-size: 20px;
-}
-
-.generator-container p {
-    color: #303952;
-}
-
-.generator-container a {
-    text-decoration: none;
-    text-align: right;
-}
-
-.input-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-
-.input-box button {
-    border-radius: 0 5px 5px 0;
-    border: none;
-    margin: 0;
-    background: #c44569;
-    font-size: 20px;
-}
-
-.input-box input {
-    border: 1px solid #c44569;
-    border-radius: 5px 0 0 5px;
-    text-align: center;
-    font-size: 20px;
-
-}
-
 .uuid-container {
     text-align: center;
-    background: FFF;
     width: 70%;
     max-width: 700px;
     margin: -60px auto 120px;
     border-radius: 5px;
     border: 3px solid #c44569;
-    ;
 }
 
 .uuid-container h2 {
@@ -290,18 +202,18 @@ form {
     width: 100%;
     height: 20px;
     background-color: #596275;
-    color: white;
     text-align: center;
-    padding: 20px
+    padding: 20px;
 }
 
 .footer a {
-    padding: 0 10px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
+
+/* POPUP */
 .popup {
     transform: translateY(-50%);
     position: fixed;
@@ -331,37 +243,19 @@ form {
     margin: 10px
 }
 
-.popup .popup-uuid {
+.popup-uuid {
     font-weight: bold;
     font-size: 26px;
     padding: 10px 0;
 }
 
-.popup-button {
-    color: #FFF;
-    background: #c44569;
-    padding: 10px 20px;
-    margin: 30px 0 20px;
-    border: none;
-    border-radius: 5px;
-    min-width: 150px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.popup .popup-button:hover {
-    background-color: #303952;
-    color: white;
-    opacity: 90%
-}
-
 .close {
+    color: #FFF;
     font-size: 26px;
     position: absolute;
     right: 20px;
     top: 20px;
     background: #c44569;
-    color: #FFF;
     border-radius: 3px;
     padding: 3px;
 }
@@ -396,7 +290,7 @@ form {
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .card {
