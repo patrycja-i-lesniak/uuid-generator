@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { AiOutlineCopy } from "react-icons/ai";
-import { Popup, Backdrop } from "../components";
+import { Popup, Backdrop, Button } from "../components";
 
 export default function CopyButton({ uuid }) {
   const [show, setShow] = useState(false);
@@ -35,18 +35,16 @@ export default function CopyButton({ uuid }) {
           <Backdrop className="backdrop" toggleShow={toggleShow} />
         </>
       )}
-
       <CopyToClipboard
         text={uuid}
         onCopy={(e) => {
           handleCopy(e);
         }}
       >
-        <button className="copy-button" style={{ width: "100px" }}>
+        <Button style={{ width: "100px" }} label="Copy">
           <AiOutlineCopy />
-          Copy{" "}
-        </button>
-      </CopyToClipboard>
+        </Button>
+      </CopyToClipboard>{" "}
     </div>
   );
 }
