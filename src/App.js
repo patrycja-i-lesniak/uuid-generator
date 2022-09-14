@@ -34,7 +34,7 @@ function App() {
 
   const list = GenerateList().map((item, index) => {
     return (
-      <li key={index}>
+      <li key={index} item={item}>
         {item}
         <CopyButton uuid={item} />
       </li>
